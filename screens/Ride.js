@@ -86,10 +86,14 @@ export default class RideScreen extends Component {
              SHORT
           );*/}
 
-          {/* ToastAndroid.show(
+          { /*ToastAndroid.show(
             'You have rented the bike for next 1 hour. Enjoy your ride!!',
             ToastAndroid.SHORT
           );*/}
+
+          // PROJECT CODE HERE
+          // ToastAndroid does not work on iOS so I am using alert
+          alert("You have rented the bike for next 1 hour. Enjoy your ride!!");
 
           this.setState({
             bikeAssigned: true,
@@ -215,7 +219,7 @@ export default class RideScreen extends Component {
 
               //onChangeText={() => this.setState({ userId: text })}
               //onChangeText={this.setState({ userId: text })}
-              //onChangeText={(text) => this.setState({ userId: text })}
+              onChangeText={(text) => this.setState({ userId: text })}
               //onChangeText={(text) => ({ userId: text })}
 
               placeholder={'User Id'}
